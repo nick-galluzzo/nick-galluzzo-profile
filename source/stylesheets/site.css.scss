@@ -1,0 +1,60 @@
+body {
+  // background-color: #fbc547;
+  margin: 0;
+  color: #333;
+}
+
+.header-content {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repat;
+  background-position: center;
+  background-image: url('https://res.cloudinary.com/dguxqdu8p/image/upload/v1580057038/litang-background_npbxdl.jpg');
+  color: black;
+}
+
+#header-title {
+  padding-top: 190px;
+  padding-left: 40px;
+
+  h1 {
+    color: #00b7ff;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: -1px 1px black;
+  }
+
+  h4 {
+    color: #305969;
+    text-shadow: 0px 1px white;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.learn-more {
+  color: black;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  margin-top: 50px;
+  font-weight: bold;
+  transition: background-color 0.8s ease;
+
+
+  padding: 1.25rem 1.75rem;
+  text-decoration: none;
+
+
+  &:hover {
+  color: white;
+  background-color: transparent;
+  }
+}
+
+#about-me {
+  height: 100vh;
+}
+
