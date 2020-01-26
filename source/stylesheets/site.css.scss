@@ -1,7 +1,22 @@
+@import 'profile';
+
+$headers-font: 'Libre Baskerville', 'serif';
+$body-font: 'Nunito', 'serif';
+
 body {
   // background-color: #fbc547;
   margin: 0;
   color: #333;
+
+  h1,
+  h4 {
+    font-family: $headers-font;
+  }
+
+  p,
+  a {
+    font-family: $body-font;
+  }
 }
 
 .header-content {
@@ -15,38 +30,40 @@ body {
 }
 
 #header-title {
-  padding-top: 190px;
+  padding-top: 130px;
   padding-left: 40px;
 
   h1 {
-    color: #00b7ff;
+    color: #2F5968;
     font-size: 100px;
     margin: 0;
     text-shadow: -1px 1px black;
   }
 
   h4 {
-    color: #305969;
-    text-shadow: 0px 1px white;
-    font-size: 20px;
+    color: #474e52;
+    font-size: 14px;
     margin: 0;
   }
 }
 
+.about-me-description {
+  margin-left: 80px;
+}
+
 .learn-more {
+  font-family: $body-font;
   color: black;
   background-color: rgba(255, 255, 255, .4);
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
-  margin-top: 50px;
   font-weight: bold;
   transition: background-color 0.8s ease;
-
-
   padding: 1.25rem 1.75rem;
   text-decoration: none;
-
+  margin-left: 180px;
+  margin-top: 10px;
 
   &:hover {
   color: white;
@@ -54,7 +71,4 @@ body {
   }
 }
 
-#about-me {
-  height: 100vh;
-}
 

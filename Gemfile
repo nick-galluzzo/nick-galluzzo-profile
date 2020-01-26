@@ -5,6 +5,7 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'middleman-livereload'
+gem 'font-awesome-middleman', '~> 4.1.1'
 
 gem 'middleman-sprockets', '4.0.0'
 gem "jquery-middleman"

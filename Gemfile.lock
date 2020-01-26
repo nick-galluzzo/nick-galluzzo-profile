@@ -28,6 +28,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.12.1)
+    font-awesome-middleman (4.1.1)
+      middleman-core (>= 3.0.0)
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
@@ -121,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-middleman (~> 4.1.1)
   jquery-middleman
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)

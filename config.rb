@@ -7,6 +7,8 @@ end
 
 activate :livereload
 activate :sprockets
+set :fonts_dir,  "fonts"
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

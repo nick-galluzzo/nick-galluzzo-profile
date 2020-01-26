@@ -1,0 +1,122 @@
+$body-font: 'Nunito', 'serif';
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile-image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #652D2E;
+}
+
+.social-media {
+  position: sticky;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+  list-style-type: none;
+  font-size: 30px;
+  color: #2f5968;
+  padding-right: 45px;
+  z-index: 1000;
+
+  li a {
+    opacity: .8;
+    transition: all 0.5s ease;
+    color: #2F5968;
+
+
+     &:hover {
+      opacity: 1;
+      cursor: pointer;
+      color: #662e2e;
+    }
+  }
+}
+
+.social-media::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #2f5968;
+  margin: 0px auto;
+}
+
+.profile-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-me {
+  height: 100vh;
+  width: 100%;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-top: 70px;
+  padding-left: 64px;
+  max-width: 80%;
+}
+
+.about-me-description {
+  h1 {
+    text-align: center;
+  }
+}
+
+.technical-skills {
+  font-size: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding-top: 8%;
+  padding-left: 8%;
+  color: #b6b5ba;
+
+  i:hover {
+    color: #2f5968;
+  }
+}
+
+.hi {
+  height: 100vh;
+}
+
+.title-hr {
+  width: 15%;
+}
+
+.contact-me {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-around;
+}
+
+.contact-me-button {
+  color: black;
+  font-family: $body-font;
+  border-color: rgba(47, 89, 104, .8);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
+  padding: 1rem 1rem;
+  text-decoration: none;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: #2f5968;
+    color: white;
+  }
+}
+
