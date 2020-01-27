@@ -18,8 +18,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-
-
 activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
@@ -55,10 +53,10 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   set :relative_links, true
-  # set :http_prefix, "/"
+  set :http_prefix, "www.nickgalluzzo.tech/"
 
   # Append a hash to asset urls (make sure to use the url helpers)
    activate :asset_hash
 
-   activate :asset_host, :host => 'http://www.nickgalluzzo.tech'
+   activate :asset_host, :host => 'www.nickgalluzzo.tech'
 end
