@@ -53,10 +53,10 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   set :relative_links, true
-  set :http_prefix, "www.nickgalluzzo.tech/"
+  set :http_prefix, "https://www.nickgalluzzo.tech/"
 
   # Append a hash to asset urls (make sure to use the url helpers)
    activate :asset_hash
 
-   activate :asset_host, :host => 'www.nickgalluzzo.tech'
+   activate :asset_host, :host => 'https://www.nickgalluzzo.tech'
 end
