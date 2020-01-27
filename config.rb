@@ -18,6 +18,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -45,7 +53,13 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  set :relative_links, true
+
+  # Append a hash to asset urls (make sure to use the url helpers)
+   activate :asset_hash
+
+   activate :asset_host, :host => 'http://www.nickgalluzzo.tech'
+end
