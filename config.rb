@@ -55,7 +55,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   set :relative_links, true
-  set :http_prefix, "/nick-galluzzo-profile/"
+  # set :http_prefix, "/"
 
   # Append a hash to asset urls (make sure to use the url helpers)
    activate :asset_hash
