@@ -45,6 +45,12 @@ body {
     font-size: 14px;
     margin: 0;
   }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 65px;
+    }
+  }
 }
 
 .about-me-description {
@@ -68,6 +74,12 @@ body {
   &:hover {
   color: white;
   background-color: transparent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-left: 90px;
+    margin-top: 16px;
+
   }
 }
 
