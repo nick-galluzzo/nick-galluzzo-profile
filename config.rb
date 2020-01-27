@@ -18,9 +18,7 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/images'
+
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
@@ -57,6 +55,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   set :relative_links, true
+  set :http_prefix, "/nick-galluzzo-profile/"
 
   # Append a hash to asset urls (make sure to use the url helpers)
    activate :asset_hash
